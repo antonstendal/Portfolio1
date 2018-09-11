@@ -1,0 +1,445 @@
+/* ------ Спецификация ------ */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #6c7279;
+	padding: 0;
+	letter-spacing: 0em;
+	margin: 0;
+	font-size: 14px;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.6em;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+.container-fluid_plain {
+	padding: 0;
+}
+
+.btn {
+	font-size: 13px;
+	color: #fff;
+	background: #e84545;
+	text-align: center;
+	display: block;
+	width: 200px;
+	padding: 15px 0;
+	font-weight: bold;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background: #fff;
+	color: #e84545;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+/* ------ Первый экран ------ */
+
+.header {
+	background: url(../img/bg.jpg) no-repeat center center;
+	color: #fff;
+	padding: 33px 0 242px;
+}
+
+.logo {
+	font-size: 30px;
+	font-weight: bold;
+	color: #626fe4;
+	padding-bottom: 33px;
+}
+
+.logo:hover {
+
+}
+
+.logo span {
+	color: #fff;
+	font-weight: 400;
+}
+
+.menu__list {
+	color: #fff;
+	padding-top: 11px;
+}
+
+.menu__item a {
+	color: #fff;	
+}
+
+.menu__item:hover {
+	transition: all 1s ease;
+	opacity: 0.5;	
+}
+
+.header__line {
+	border-top: 1px solid #363741;
+	padding: 0;
+	margin: 0;
+}
+
+.world {
+	padding-top: 160px;
+	text-align: center;
+}
+
+.world__title {
+	
+}
+
+.world__text {
+	font-size: 22px;
+	padding: 13px 0 9px;
+}
+
+.world__btn {
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+/* ------ Второй экран ------ */
+
+.quality {
+	padding: 121px 0 121px;
+}
+
+.about {
+	text-align: center;
+	width: 300px;
+}
+
+.about__image {
+
+}
+
+.about__title {
+	padding: 27px 0 13px;
+	color: #000;
+} 
+
+.about__text {
+	color: #6c7279;
+
+} 
+
+.about__second {
+	padding-top: 71px;
+}
+ 
+/* ------ Третий экран ------ */
+
+.work {
+	padding-bottom: 129px;
+}
+.card:hover .card__overlay {
+	transition: all 0.3s ease-out;
+	opacity: 1;
+}
+
+.card__top {
+	margin-bottom: 26px;
+}
+
+.card__img {
+	position: relative;
+}
+
+.card__overlay {
+	background: rgba(211, 63, 63, 0.88);
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.card__overlay_title {
+	font-weight: bold;
+	color: #4c4c4c;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-bottom: 8px;
+}
+
+/* ------ Четвёртый экран ------ */
+
+.people {
+	background: #f1f2fd;
+	padding: 125px 0 117px;
+}
+
+.staff {
+
+}
+
+.staff__name {
+	padding: 0;
+	margin: 0;
+	text-transform: capitalize;
+	padding-top: 20px;
+}
+
+.staff__position {
+	padding-bottom: 20px;
+	color: #e84545;
+}
+
+.staff__text {
+	padding-bottom: 29px;
+	width: 270px;
+}
+
+.staff__links {
+	display: flex;
+}
+
+.staff__links_wrap {
+	width: 39px;
+	height: 39px;
+	background: #fff;
+	border: 1px solid #e8ecee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+}
+
+/* ------ Пятый экран ------ */
+
+.container-fluid_plane {
+	padding: 0;
+}
+
+.boss {
+	background: url('../img/woomen.jpg') no-repeat center center;
+	height: 500px;
+}
+
+.boss__wrap {
+	background: #53354a;
+	height: 500px;
+}
+
+.boss__text {
+	width: 100%;
+	font-size: 36px;
+	font-style: italic;
+	color: #fff;
+	padding: 130px 0 33px 85px;
+}
+
+.boss__option {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	padding:0 0 119px 85px;
+}
+
+/* ------ Шестой экран ------ */
+
+.start {
+	padding: 100px 0;
+}
+
+.ready {
+	text-align: center;
+	color: #fff;
+}
+
+.ready__qwestion {
+	font-size: 28px;
+	font-weight: bold;
+	color: #2d3033;	
+}
+
+.ready__text {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #2d3033;
+	padding: 12px 0 38px;
+}
+
+.ready__btn {
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.ready__btn:hover {
+	background: #fff;
+	border: 1px solid #e84545;
+	color: #e84545;
+} 
+
+/* ------ Футер------ */
+
+.footer {
+	background: #3a3e64;
+	padding: 89px 0 84px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.information__text {
+	color: #74757b;
+}
+
+.information__text_red {
+	color: #c4434e;
+}
+
+.information__text_white {
+	color: #fff;
+}
+
+.information_long {
+}
+
+/* Media Queries */
+
+/* 992 - 1200 px */
+@media screen and (max-width: 1200px) {
+	.staff {
+		margin-bottom: 25px;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+
+/* 768 - 992 px */
+@media screen and (max-width: 992px) {
+	.logo {
+		display: block;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		font-size: 20px;
+	}
+	.header {
+		padding: 0px 0 242px;
+	}
+	.header__line {
+		display: none;
+	}
+	.about__image_down {
+		margin-top: 43px; 
+	}
+	.menu {
+
+	}
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+	.world__title {
+		font-size: 39px;
+    	line-height: 1.1;
+	}
+	.world__text {
+		font-size: 19px;
+	}
+	.about {
+		margin: 0;
+		padding: 27px;
+	}
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+	.card {
+		margin-bottom: 26px;
+	}
+	.boss {
+		display: none;
+	}
+	.boss__wrap {
+		height: 238px;
+	}
+
+	.boss__text {
+		width: 100%;
+    	font-size: 16px;
+    	font-style: italic;
+    	color: #fff;
+    	padding: 60px 0 20px 18px;
+	}
+	.boss__option {
+		padding: 0 0 105px 21px;
+		font-size: 8px;
+	}
+	.information {
+		padding-top: 39px;
+	}
+	.information__title {
+		margin: 0;
+	}
+	.card {
+		text-align: center;
+	}
+
+}
+
+

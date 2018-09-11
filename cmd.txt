@@ -1,0 +1,3 @@
+offset-1 (ѕропуск одной колонки между контентом)
+ml-auto (Ѕлок прилипает вправо контейнера(margin left))
+text-right text-center text-left (классы в Bootstrap HTML)
